@@ -48,5 +48,5 @@ my_cur.execute("use warehouse pc_rivery_wh")
 my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains:")
-streamlit.text(my_data_rows)
+streamlit.dataframe(my_data_rows)
 
